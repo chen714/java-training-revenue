@@ -3,13 +3,10 @@ package com.accenture.tagtrainingspring;
 import com.accenture.tagtrainingspring.patient.Gender;
 import com.accenture.tagtrainingspring.patient.Patient;
 import com.accenture.tagtrainingspring.screening.Screening;
-import com.accenture.tagtrainingspring.screening.ScreeningDatabase;
 import com.accenture.tagtrainingspring.screening.ScreeningService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import javax.swing.*;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Scanner;
@@ -20,8 +17,8 @@ public class TagTrainingSpringApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(TagTrainingSpringApplication.class, args);
 		printWelcomeMessage();
-		day1task2();
-		day2Task1();
+		//day1task2();
+		//day2Task1();
 		//day2Task2();
 		//day2Task3();
 
@@ -41,7 +38,7 @@ public class TagTrainingSpringApplication {
 				"                                                        __/ |\n" +
 				"                                                       |___/ \n");
 	}
-
+/*
 	private static void day1task2() {
 		System.out.println("==========================================day1task2==========================================");
 		Patient p = new Patient("Peter", 1, LocalDate.of(1998, 7, 14), Gender.MALE);
@@ -91,4 +88,5 @@ public class TagTrainingSpringApplication {
 		}while(found != true);
 
 	}
+	*/
 }

@@ -11,27 +11,28 @@ import java.util.List;
 @Service
 public class ScreeningService {
 
-    @Autowired
-    ScreeningDatabase data;
+
+
 
     public boolean isScreeningForPatient(Patient p , Screening s ){
-        if(p.getId().equals(s.getPatient().getId())){
+        if(p.getId().equals(s.getId())){
             return true;
         }
         return false;
     }
-
+/*
     public List<Screening> getAllScreenings(){
-       return data.getAllScreenings();
+       //return data.getAllScreenings();
+        return null;
     }
-
+/*
     public Screening getScreeningByName(String name){
         for(Screening s : getAllScreenings()){
-            if(s.getPatient().getName().equalsIgnoreCase(name)){
+            if(s.getName().equalsIgnoreCase(name)){
                 return s;
             }
         }
         return null;
     }
-
+*/
 }

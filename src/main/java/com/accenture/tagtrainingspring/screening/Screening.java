@@ -1,61 +1,75 @@
 package com.accenture.tagtrainingspring.screening;
 
 import com.accenture.tagtrainingspring.patient.Patient;
+import lombok.Data;
 
 import java.time.LocalDate;
 
+@Data
 public class Screening {
-    private Integer screeningId;
-    private Patient patient;
-    private LocalDate dateOfScreening;
-    private Boolean malignantResult;
+    private int id;
 
-    public Screening(Integer screeningId, Patient patient, LocalDate dateOfScreening, Boolean malignantResult) {
-        this.screeningId = screeningId;
-        this.patient = patient;
-        this.dateOfScreening = dateOfScreening;
-        this.malignantResult = malignantResult;
-    }
+    private char diagnosis;
 
-    @Override
-    public String toString() {
-        return "Screening{" +
-                "screeningId=" + screeningId +
-                ", patient =" + patient +
-                ", dateOfScreening=" + dateOfScreening +
-                ", malignantResult=" + malignantResult +
-                '}';
-    }
+    private double radiusMean;
 
-    public Integer getScreeningId() {
-        return screeningId;
-    }
+    private double textureMean;
 
-    public void setScreeningId(Integer screeningId) {
-        this.screeningId = screeningId;
-    }
+    private double perimeterMean;
 
-    public Patient getPatient() {
-        return patient;
-    }
+    private double areaMean;
 
-    public void setPatient(Patient patient) {
-        this.patient = patient;
-    }
+    private double smoothnessMean;
 
-    public LocalDate getDateOfScreening() {
-        return dateOfScreening;
-    }
+    private double compactnessMean;
 
-    public void setDateOfScreening(LocalDate dateOfScreening) {
-        this.dateOfScreening = dateOfScreening;
-    }
+    private double concavityMean;
 
-    public Boolean getMalignantResult() {
-        return malignantResult;
-    }
+    private double concavePointsMean;
 
-    public void setMalignantResult(Boolean malignantResult) {
-        this.malignantResult = malignantResult;
-    }
+    private double symmetryMean;
+
+    private double fractalDimensionMean;
+
+    private double radiusSe;
+
+    private double textureSe;
+
+    private double perimeterSe;
+
+    private double areaSe;
+
+    private double smoothnessSe;
+
+    private double compactnessSe;
+
+    private double concavitySe;
+
+    private double concavePointsSe;
+
+    private double symmetrySe;
+
+    private double fractalDimensionSe;
+
+    private double radiusWorst;
+
+    private double textureWorst;
+
+    private double perimeterWorst;
+
+    private double areaWorst;
+
+    private double smoothnessWorst;
+
+    private double compactnessWorst;
+
+    private double concavityWorst;
+
+    private double concavePointsWorst;
+
+    private double symmetryWorst;
+
+    private double fractalDimensionWorst;
+
+    private char groupId;
 }
